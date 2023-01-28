@@ -52,7 +52,7 @@
   border-radius: 0.7rem;
   border: none;
   background: #3882f6;
-  color: white !important;
+  color: white;
   font-family: inherit;
   text-align: center;
   font-size: 1.4rem;
@@ -91,7 +91,7 @@
 .header-btn-cta:link,
 .header-btn-cta:visited {
   text-decoration: none;
-  color: white !important;
+  color: white;
 }
 /* -------------------------------------------------------------- INFO-SECTION-CSS-STYLES -------------------------------------------------------------- */ 
 
