@@ -91,7 +91,7 @@
 .header-btn-cta:link,
 .header-btn-cta:visited {
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 /* -------------------------------------------------------------- INFO-SECTION-CSS-STYLES -------------------------------------------------------------- */ 
 
