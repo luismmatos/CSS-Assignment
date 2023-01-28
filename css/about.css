@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:ital@0;1&display=swap");
+
+
+/* -------------------------------------------- ABOUT-US-HEADER CSS STYLE --------------------------------------------  */
+.about-us-wrapper {
+  max-width: 100%;
+  height: 50rem;
+  padding: 1.2rem 2.4rem;
+  color: inherit;
+  position: relative;
+  background-position-y: 5rem;
+  background-color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+  animation: introLoad 2s forwards;
+}
+@keyframes introLoad {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.aboutHeader {
+  width: 65rem;
+  height: auto;
+  margin: 8rem auto;
+}
+
+.titlePrimary {
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  line-height: 5rem;
+  font-weight: 900;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.squareIcon {
+  position: absolute;
+  font-size: 10rem;
+  color: #1f2937;
+  border: 3px solid orange;
+}
+.icon1 {
+  top: 10%;
+  left: 10%;
+}
+.icon2 {
+  top: 15%;
+  right: 10%;
+  font-size: 5rem;
+}
+.icon3 {
+  bottom: 10%;
+  left: 20%;
+  font-size: 5rem;
+}
+.icon4 {
+  top: 75%;
+  right: 10%;
+  font-size: 9rem;
+}
+
+/* -------------------------------------------- ABOUT-US-CONTENT CSS STYLE --------------------------------------------  */
+.content-wrapper {
+  max-width: 100%;
+  height: 60rem;
+  color: #000;
+  margin: 10rem 0;
+  overflow: hidden;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.content-left {
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem 2.4rem;
+  align-self: center;
+}
+.mainContent {
+  width: 80%;
+  height: 100%;
+  padding: 2.4rem 4.8rem;
+}
+
+.line {
+  width: 10%;
+  height: 0.4rem;
+  background-color: #1f2937;
+  margin: 2rem 0;
+}
+.titleSecondary {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.desc {
+  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #6e6e6e;
+  letter-spacing: normal;
+}
+.content-right {
+  width: 100%;
+  height: 100%;
+}
+
+.contentPic {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* -------------------------------------------- MEET-THE-TEAM CSS STYLE --------------------------------------------  */
+.team-wrapper {
+  width: 120rem;
+  height: auto;
+  margin: 10rem auto;
+}
+.team-header {
+  margin: 6.2rem auto;
+}
+.team-header::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 0.2rem;
+  background-color: #1f2937;
+  margin: 4rem auto;
+}
+.teamTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #343a40;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.team-container {
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 12rem;
+  column-gap: 4rem;
+}
+.team-member {
+  width: 20%;
+  height: 35rem;
+}
+.team-photo {
+  border-radius: 75px 75px 75px 75px;
+
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.docPhoto {
+  border-radius: 75px 75px 75px 75px;
+  width: 100%;
+  height: 50%;
+}
+.docPhoto:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.team-info {
+  text-align: center;
+}
+.teamName {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: #343a40;
+  margin-bottom: 1.5rem;
+}
+.teamDesc {
+  font-family: "Lato", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: rgb(170, 170, 170);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* -------------------------------------------- QUOTE CSS STYLE --------------------------------------------  */
+
+.quote-wrapper {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rem 0 10rem 0;
+  background: rgb(32, 65, 87);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 65, 87, 1) 0%,
+    rgba(31, 41, 55, 1) 82%
+  );
+}
+
+.quote-container {
+  width: 65%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.quote-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* -------------------------------------------- VALUES CSS STYLE --------------------------------------------  */
+.values-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 20rem 0;
+  color: #343a40;
+}
+.values-header {
+  margin: 10rem auto;
+}
+.values-header::after {
+  content: "";
+  display: block;
+  width: 8%;
+  height: 0.2rem;
+  background-color: #1f2937;
+  margin: 4rem auto;
+}
+
+.valuesTitle {
+  font-family: "Roboto", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: inherit;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.values-container {
+  padding: 1.2rem 2.4rem;
+  margin: 0 auto;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.value-item {
+  width: 20%;
+  height: 20rem;
+}
+
+.valueIcon {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.valueTitle {
+  font-family: "Lato", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+.valueDesc {
+  font-family: "Lato", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #6e6e6e;
+  letter-spacing: normal;
+}
+/* -------------------------------------------- QUOTE2 CSS STYLE --------------------------------------------  */
+.quote2-wrapper {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rem 0 0 0;
+  background: rgb(32, 65, 87);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 65, 87, 1) 0%,
+    rgba(31, 41, 55, 1) 82%
+  );
+}
+
+.quote2-container {
+  width: 65%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.quote2-content {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 4rem;
+  font-weight: 400;
+  text-align: center;
+}

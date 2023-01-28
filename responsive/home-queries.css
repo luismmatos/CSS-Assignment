@@ -1,0 +1,212 @@
+/* Below 1200px (Landscape tablets) */
+@media (max-width: 75em) {
+  html {
+    /* 9/16= 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 6.4rem;
+  }
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .hero-description {
+    font-size: 1.8rem;
+  }
+  header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .quotation-mark {
+    position: absolute;
+    width: 13.5rem;
+    height: 13.5rem;
+    top: 2rem;
+    left: 15rem;
+    color: #e5e7eb;
+    opacity: 0.05;
+  }
+}
+/* Below 944px ( tablets) */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .heading-primary {
+    font-size: 6rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .hero-img {
+    width: 85%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+  .quotation-mark {
+    width: 12.5rem;
+    height: 12.5rem;
+    top: 2rem;
+    left: 12rem;
+    opacity: 0.05;
+  }
+
+  .quote-content {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .quote-author {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1px;
+    letter-spacing: 1.5px;
+    margin-top: 2rem;
+  }
+}
+/* Below 704px (smaller tablets) */
+@media (max-width: 44em) {
+  .grid-3-columns,
+  .grid-4-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quotation-mark {
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    top: 2rem;
+    left: 7rem;
+    color: #e5e7eb;
+    opacity: 0.05;
+  }
+  .quote-content {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .quote-author {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1px;
+    letter-spacing: 1.5px;
+    margin-top: 2rem;
+  }
+  .info-boxes {
+    flex-wrap: wrap;
+  }
+}
+/* Below 550px (Phones) */
+@media (max-width: 35em) {
+  html {
+    font-size: 40%;
+  }
+  .section-hero {
+    padding: 2.8rem 0 9.6rem 0;
+  }
+  .hero {
+    padding: 0 2.8rem;
+  }
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid-2-columns,
+  .grid-3-columns,
+  .grid-4-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+  }
+  .heading-secondary {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+  .hero-description {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+  .button span {
+    font-size: 1.8rem;
+  }
+  .sign-up-section {
+    width: 80%;
+  }
+  .author-container {
+    margin-top: 2rem;
+  }
+  .quotation-mark {
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    top: 2rem;
+    left: 5rem;
+    color: #e5e7eb;
+    opacity: 0.05;
+  }
+  .quote-content {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .quote-author {
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 1px;
+    letter-spacing: 1.5px;
+    margin-top: 2rem;
+  }
+  .cta-button {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .cta-header {
+    font-size: 1.8rem;
+  }
+  .info-boxes {
+    flex-wrap: wrap;
+  }
+}

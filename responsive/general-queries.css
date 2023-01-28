@@ -1,0 +1,121 @@
+/* ----------------------------------- NAVBAR & FOOTER MEDIA QUERIES ------------------------- */
+/* Below 1200px (Landscape tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/* Below 944px ( tablets) */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .heading-primary {
+    font-size: 6rem;
+  }
+  .footer {
+    padding: 8.6rem 3.2rem;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Below 704px (smaller tablets) */
+@media (max-width: 44em) {
+  html {
+    font-size: 45%;
+  }
+  .nav-toggle,
+  .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1f2937;
+    transition: all 0.4s;
+    transform: translate(100%);
+    z-index: 99;
+  }
+
+  .btn-mobile-nav {
+    position: relative;
+    display: block;
+  }
+  .nav-toggle {
+    position: absolute;
+    top: 32px;
+    right: 38px;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+  }
+
+  /* if the checkbox is checked then remove hamburger menu and show close icon */
+  .nav-toggle:checked ~ .main-nav-list {
+    transform: translate(0%);
+  }
+  .nav-toggle:checked ~ .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .nav-toggle:checked ~ .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    z-index: 100;
+  }
+  .footer {
+    padding: 8.6rem 2.8rem;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Below 550px (Phones) */
+@media (max-width: 35em) {
+  html {
+    font-size: 40%;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid {
+    row-gap: 5.8rem !important;
+  }
+  .logo {
+    height: 6rem;
+  }
+  .footer-heading {
+    font-size: 1.8rem;
+  }
+  .address {
+    font-size: 1.4rem;
+  }
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.4rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+  .social-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}

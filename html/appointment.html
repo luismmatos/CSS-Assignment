@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <!-- CSS EXTERNAL FILES -->
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../responsive/general-queries.css">
+  <link rel="stylesheet" href="../css/appointment.css">
+  <!-- FONTS CDN LINKS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- FONTAWESOME CDN LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="../assets/websiteIcon.webp" type="image/x-icon">
+  <title>Book-an-appointment</title>
+</head>
+
+<body>
+  <header class="header ">
+    <a href="../index.html">
+      <img src="../assets/general/BetterLivingLogo.png" alt="Better-Living Website logo" class="logo" />
+    </a>
+
+    <nav class="main-nav">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <i class="icon-mobile-nav menu-icon fa-sharp fa-solid fa-bars" name="menu-outline"></i>
+      <i class="icon-mobile-nav close-icon fa-solid fa-xmark" name="close-outline"></i>
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="../index.html"> Home </a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="./about.html"> About</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="./services.html"> Services</a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="./appointment.html"> Book an appointment</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="form-appointment">
+    <div class="form-appointment-text">
+      <h2>Book an appointment</h2>
+      <p>Don't waste any more time and schedule an appointment now using the form below!</p>
+
+      <form class="form-appointment">
+        <fieldset>
+          <label for="radio">New patient? </label>
+          <input type="radio" id="radio" name="new_patient" value="Yes">
+          <label>Yes</label>
+          <input type="radio" id="radio" name="new_patient" value="No">
+          <label>No</label>
+        </fieldset>
+        <br>
+        <div class="personal-info">
+          <label for="genre">Genre </label>
+          <select id="genre">
+            <option value="none" selected>---</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+          </select>
+          <label for="firstname">First Name </label>
+          <input type="text" id="firstname" placeholder="First Name">
+          <label for="lastname" class="lastname">Last Name </label>
+          <input type="text" id="lastname" placeholder="Last Name">
+        </div>
+        <br>
+        <div class="personal-info-birth">
+          <label for="birth">Birth Date </label>
+          <input type="date" id="birth">
+        </div>
+        <br>
+        <div class="personal-contacts">
+          <label for="email">Email </label>
+          <input type="email" id="email" size="30" placeholder="Ex: myname@example.com">
+          <label for="phone">Phone Number </label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ex: 123-456-7890">
+        </div>
+        <br>
+        <div class="appointment">
+          <label for="appointment-type">Which service do you want to make an appointment for? </label>
+          <select id="appointment-type">
+            <option value="none" selected>-------</option>
+            <option value="Consultation">Consultation</option>
+            <option value="Covid Testing">Covid Testing</option>
+            <option value="Blood Tests">Blood Tests</option>
+            <option value="Radiology">Radiology</option>
+          </select>
+        </div>
+        <br>
+        <div class="appointment-date">
+          <label for="appointment-date">Appointment Date </label>
+          <input type="date" id="appointment-date">
+        </div>
+        <br>
+        <div class="full-width">
+          <input type="submit" value="Submit" id="submit">
+          <input type="reset" value="Clear Form" id="reset">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="grid grid-footer">
+      <div class="logo-col">
+        <a href="../index.html" class="footer-logo">
+          <img src="../assets/general/BetterLivingLogo.png" alt="Better Living logo" class="logo" />
+        </a>
+        <p class="copyright">
+          Copyright &copy; <span class="year">2023</span> by betterliving, Inc.
+          All rights reserved
+        </p>
+      </div>
+      <div class="address-col">
+        <p class="footer-heading">Contact Us</p>
+        <div class="footer-line"></div>
+        <address class="contacts">
+          <p class="address">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370"> 415-201-6370</a>
+          </p>
+
+          <p>
+            <a class="footer-link" href="mailto:hello@betterliving.com">info@betterliving.com</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <div class="footer-line"></div>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="../index.html">Home </a></li>
+          <li><a class="footer-link" href="./about.html">About </a></li>
+          <li><a class="footer-link" href="./services.html">Services </a></li>
+          <li><a class="footer-link" href="./appointment.html">Book An Appointment </a></li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <div class="footer-line"></div>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Help center </a></li>
+          <li><a class="footer-link" href="#">Privacy & terms </a></li>
+        </ul>
+      </nav>
+      <nav class="nav-col">
+        <p class="footer-heading">Social Media</p>
+        <div class="footer-line"></div>
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="https://twitter.com/healthway">
+              <i class="social-icon fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.facebook.com/HealthwayPhilippines/">
+              <i class="social-icon fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.instagram.com/healthwayphilippines/">
+              <i class="social-icon fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="https://www.linkedin.com/healthwaymedical?_l=en_US">
+              <i class="social-icon fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
